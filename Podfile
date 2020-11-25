@@ -8,6 +8,6 @@ target 'itunesChallenge' do
   # Pods for itunesChallenge
 pod 'Alamofire'
 pod 'SwiftyJSON'
-pod 'SGImageCache'
+pod 'Kingfisher'
 
 end

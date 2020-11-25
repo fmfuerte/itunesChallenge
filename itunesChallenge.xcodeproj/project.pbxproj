@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		24F33BBA256D3BCB00EC3273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F33BB8256D3BCB00EC3273 /* Main.storyboard */; };
 		24F33BBC256D3BD000EC3273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F33BBB256D3BD000EC3273 /* Assets.xcassets */; };
 		24F33BBF256D3BD000EC3273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F33BBD256D3BD000EC3273 /* LaunchScreen.storyboard */; };
+		24F33BCD256D59A400EC3273 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F33BCC256D59A400EC3273 /* Track.swift */; };
+		24F33BCF256D59F700EC3273 /* TrackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F33BCE256D59F700EC3273 /* TrackService.swift */; };
+		24F33BD1256D5A4100EC3273 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F33BD0256D5A4100EC3273 /* TrackModel.swift */; };
+		24F33BD3256D68FF00EC3273 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F33BD2256D68FF00EC3273 /* TrackCell.swift */; };
+		24F33BD7256DBCF700EC3273 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F33BD6256DBCF700EC3273 /* DetailViewController.swift */; };
 		28F0FEC1F7B67D7877B298DC /* Pods_itunesChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C61D221C9A406B4E3244A2 /* Pods_itunesChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		24F33BBB256D3BD000EC3273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24F33BBE256D3BD000EC3273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24F33BC0256D3BD000EC3273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F33BCC256D59A400EC3273 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		24F33BCE256D59F700EC3273 /* TrackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackService.swift; sourceTree = "<group>"; };
+		24F33BD0256D5A4100EC3273 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		24F33BD2256D68FF00EC3273 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		24F33BD6256DBCF700EC3273 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		29C61D221C9A406B4E3244A2 /* Pods_itunesChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_itunesChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9E6C93BCD2EC0AC68021D1 /* Pods-itunesChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunesChallenge.release.xcconfig"; path = "Target Support Files/Pods-itunesChallenge/Pods-itunesChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +84,11 @@
 				24F33BB2256D3BCB00EC3273 /* AppDelegate.swift */,
 				24F33BB4256D3BCB00EC3273 /* SceneDelegate.swift */,
 				24F33BB6256D3BCB00EC3273 /* ViewController.swift */,
+				24F33BD6256DBCF700EC3273 /* DetailViewController.swift */,
+				24F33BD2256D68FF00EC3273 /* TrackCell.swift */,
+				24F33BCC256D59A400EC3273 /* Track.swift */,
+				24F33BCE256D59F700EC3273 /* TrackService.swift */,
+				24F33BD0256D5A4100EC3273 /* TrackModel.swift */,
 				24F33BB8256D3BCB00EC3273 /* Main.storyboard */,
 				24F33BBB256D3BD000EC3273 /* Assets.xcassets */,
 				24F33BBD256D3BD000EC3273 /* LaunchScreen.storyboard */,
@@ -88,7 +103,6 @@
 				01D9F4814EE56D65985935D7 /* Pods-itunesChallenge.debug.xcconfig */,
 				AA9E6C93BCD2EC0AC68021D1 /* Pods-itunesChallenge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F33BCD256D59A400EC3273 /* Track.swift in Sources */,
+				24F33BD1256D5A4100EC3273 /* TrackModel.swift in Sources */,
 				24F33BB7256D3BCB00EC3273 /* ViewController.swift in Sources */,
+				24F33BCF256D59F700EC3273 /* TrackService.swift in Sources */,
 				24F33BB3256D3BCB00EC3273 /* AppDelegate.swift in Sources */,
 				24F33BB5256D3BCB00EC3273 /* SceneDelegate.swift in Sources */,
+				24F33BD3256D68FF00EC3273 /* TrackCell.swift in Sources */,
+				24F33BD7256DBCF700EC3273 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
